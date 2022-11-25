@@ -12,7 +12,7 @@ git clone https://github.com/3nws/capital.git
 - cd into repo:
 
 ```bash
-cd capital
+cd laravel-v9-reqres
 ```
 
 - Run `composer install`
