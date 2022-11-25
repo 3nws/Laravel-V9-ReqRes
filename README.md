@@ -6,7 +6,7 @@
 - Clone repository:
 
 ```bash
-git clone https://github.com/3nws/capital.git
+git clone https://github.com/3nws/Laravel-V9-ReqRes.git
 ```
 
 - cd into repo:
