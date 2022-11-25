@@ -1,4 +1,4 @@
-# Laravel Assignment
+## Simple Laravel app
 
 ## Getting Started
 
