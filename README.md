@@ -1,6 +1,6 @@
 # Laravel Assignment
 
-## Steps to build
+## Getting Started
 
 - Install [composer](https://getcomposer.org/)
 - Clone repository:
