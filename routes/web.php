@@ -15,17 +15,17 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    return view("welcome");
 });
 
 
-Route::get('/users', [UserController::class, 'users'])->name("list");
-Route::get('/users/add', [UserController::class, 'add'])->name("user_add");
+Route::get("/users/add", [UserController::class, "add"])->name("user_add");
+Route::get("/users/{page_number?}", [UserController::class, "users"])->name("list");
 
-Route::get('/users/edit/{id}', [UserController::class, 'edit'])->name("user_edit");
-Route::get('/users/show/{id}', [UserController::class, 'user'])->name("user_detail");
-Route::get('/users/delete/{id}', [UserController::class, 'delete'])->name("user_delete");
+Route::get("/users/edit/{id}", [UserController::class, "edit"])->name("user_edit");
+Route::get("/users/show/{id}", [UserController::class, "user"])->name("user_detail");
+Route::get("/users/delete/{id}", [UserController::class, "delete"])->name("user_delete");
 
-Route::post('/users/create', [UserController::class, 'create'])->name("user_create");
-Route::post('/users/update/{id}', [UserController::class, 'update'])->name("user_update");
+Route::post("/users/create", [UserController::class, "create"])->name("user_create");
+Route::post("/users/update/{id}", [UserController::class, "update"])->name("user_update");

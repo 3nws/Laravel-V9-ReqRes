@@ -1,20 +1,20 @@
-@extends('layout')
+@extends("layout")
 
-@section('title')
-{{ $operation==0 ? "Create": "Edit" }} . "User"
+@section("title")
+{{ $operation==0 ? "Create": "Edit" }}  User
 @endsection
 
-@section('description')
+@section("description")
 {{ $operation==0 ? "Create": "Edit" }}  a user
 @endsection
 
-@section('keywords')
+@section("keywords")
 {{ $operation==0 ? "Create": "Edit" }}  user, form
 @endsection
 
 
 
-@section('content')
+@section("content")
 
     <div class="ftco-blocks-cover-1">
         <div class="ftco-cover-1 overlay innerpage">
@@ -56,5 +56,5 @@
     </div>
 @endsection
 
-@section('footerjs')
+@section("footerjs")
 @endsection
