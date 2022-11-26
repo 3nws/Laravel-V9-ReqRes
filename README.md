@@ -15,9 +15,12 @@ git clone https://github.com/3nws/Laravel-V9-ReqRes.git
 cd laravel-v9-reqres
 ```
 
-- Run `composer install`
-- Run `php artisan cache:clear`
-- Run `copy .env.example .env`
-- Run `php artisan key:generate`
-- Run `php artisan route:clear`
-- Run `php artisan serve`
+- Run the following commands:
+```bash
+composer install
+php artisan cache:clear
+copy .env.example .env
+php artisan key:generate
+php artisan route:clear
+php artisan serve
+```
