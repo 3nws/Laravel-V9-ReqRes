@@ -41,19 +41,23 @@ list, users
                 <div class="card" style="flex: 1; margin: 2em; max-width:25%;">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="{{ $user->avatar }}" alt="Avatar image">
+                        <a href="{{ route('user_detail', ['id' => $user->id]) }}">
+                          <img src="{{ $user->avatar }}" alt="Avatar image">
+                        </a>
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
                           <figure class="image is-48x48">
-                            <img src="{{ $user->avatar }}" alt="Avatar image">
+                            <a href="{{ route('user_detail', ['id' => $user->id]) }}">
+                              <img src="{{ $user->avatar }}" alt="Avatar image">
+                            </a>
                           </figure>
                         </div>
                         <div class="media-content">
                         <span>{{ $cnt++ }}.</span>
-                          <p class="title is-4">{{ isset($user->name) ? $user->name : $user->first_name . " " . $user->last_name }}</p>
+                          <p class="title is-4"><a href="{{ route('user_detail', ['id' => $user->id]) }}">{{ isset($user->name) ? $user->name : $user->first_name . " " . $user->last_name }}</a></p>
                         </div>
                       </div>
                   
